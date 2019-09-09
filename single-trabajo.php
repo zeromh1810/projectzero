@@ -4,23 +4,19 @@
 	<?php while (have_posts()) { ?>
 		<?php the_post(); ?>
 
-		<section class="container-body margin-body">
+		<section class="blog-container margin-body">
 			<!-- <h2 class="section-title">Un poco de mi :D</h2> -->
-			<div class="container-between-start">
-				<div class="excerpt-title wow fadeInLeft" data-wow-duration="1s">
-					<h2><?php the_title() ?></h2>
-				</div>
-				<div class="img-title wow fadeInRight">
-					<?php the_post_thumbnail('profile', array('class' => 'content__bio__img')); ?>
+				<div class="section-title center wow fadeInLeft" data-wow-duration="1s">
+					<h2 class=""><?php the_title() ?></h2>
 				</div>
 				<div class="content__text">
-					<p class="content__resume"><?php the_content() ?></p>
+					<?php the_content() ?>
 				</div>
-			</div>
-			<section class="single-gallery wow fadeInUp">
 				<div class="main">
 					<img src="<?php the_field('imagen01') ?>" alt="">
 				</div>
+
+			<section class="single-gallery wow fadeInUp">
 				<div class="thumbnails wow fadeInUp" data-wow-delay="0.2s">
 					<div class="thumbnails__img">
 						<img src="<?php the_field('imagen02') ?>" alt="">

@@ -1,9 +1,7 @@
 <?php get_header() ?>
 
 <header class="lightning-hero" id="grayscale">
-    <div class="logo-hero">
-        <img src="<?php echo get_theme_file_uri()?>/assets/img/logo-hero.png" alt="">
-    </div>
+    <h1 class="hero-title border">Project Zero</h1>
 </header>
 <section id="about" class="about">
     <!-- <h2 class="section-title">Un poco de mi :D</h2> -->
@@ -49,7 +47,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="primary-button wow fadeInUp" data-wow-delay="0.3s" href="<?php get_permalink(get_page_by_path('about')) ?>">Saber más de mi</a>
+                <a class="primary-button wow fadeInUp" data-wow-delay="0.3s" href="<?php get_permalink( get_page_by_path('about')) ?>">Saber más de mi</a>
             </div>
 
         <?php }

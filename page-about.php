@@ -8,7 +8,7 @@
             <?php the_content() ?>
         </div>
         <div class="content__bio wow fadeInRight">
-            <?php the_post_thumbnail('profile', array('class' => 'content__bio__img')); ?>
+            <?php the_post_thumbnail('profile', array('class' => 'content__bio__img h-auto')); ?>
         </div>
     </div>
 </section>

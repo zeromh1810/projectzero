@@ -1,8 +1,8 @@
 <?php get_header() ?>
-<section class="container-body margin-body">
+<section class="blog-container">
     <h1 class="section-title">Portafolio</h1>
     <h4 class="center">Descubre algunos de mis trabajos favoritos :)</h4>
-    <div class="content-center">
+    <div class="content-center margin-section">
 
 
         <?php
@@ -20,7 +20,7 @@
                 <div class="work-wrapper">
                     <a style="margin:0;" href="<?php the_permalink() ?>" target="_self">
                         <div class="content-overlay"></div>
-                        <?php the_post_thumbnail('works', array('class' => 'content-image')); ?>
+                        <?php the_post_thumbnail('works', array('class' => 'content-image h-auto')); ?>
                         <div class="content-details fadeIn-top">
                             <h3><?php the_title() ?></h3>
                             <p class="latest-work__excerpt"><?php the_excerpt() ?></p>
@@ -35,6 +35,9 @@
 
     </div>
 </section>
+
+<?php get_footer() ?>
+
 <!-- SCRIPT MAPA -->
 
 <script type="text/javascript">
@@ -51,4 +54,3 @@
 
 
 
-<?php get_footer() ?>

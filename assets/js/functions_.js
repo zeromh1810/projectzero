@@ -1,5 +1,0 @@
-(function($) {
-
-	// Functions
-
-})(window.jQuery);

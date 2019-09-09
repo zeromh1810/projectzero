@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="<?php bloginfo('charset') ?>">
-  <title>Home | Project Zero</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="profile" href="http://gmpg.org/xfn/11">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
@@ -19,7 +18,7 @@
 
   <nav class="navbar navbar-default navbar-expand-lg nav-menu">
     <div class="container-fluid">
-      <a href="<?php bloginfo('url') ?>" class="navbar-brand text-uppercase">Project Zero</a>
+      <a href="<?php bloginfo('url') ?>" class="navbar-brand text-uppercase"><img src="<?php echo get_theme_file_uri() ?>/assets/img/logo.png" alt="">  </a>
       <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#myNavbar">
         <div class="line1 ham"></div>
         <div class="line2 ham"></div>
