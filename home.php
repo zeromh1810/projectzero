@@ -49,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <a class="primary-button wow fadeInUp" data-wow-delay="0.3s" href="<?php get_permalink(get_page_by_path('about')) ?>">Saber más de mi</a>
+                <a class="primary-button wow fadeInUp" data-wow-delay="0.3s" href="<?php bloginfo('url') ?>/about/">Saber más de mi</a>
             </div>
 
         <?php }
@@ -199,7 +199,7 @@
             <div class="latest-work wow fadeInUp">
                 <?php the_post_thumbnail('miniatura', array('class' => 'latest-work__img')); ?>
                 <h3 class="latest-work__title"><?php the_title() ?></h3>
-                <p class="latest-work__excerpt"><?php the_excerpt() ?><a class="view-more wow fadeInUp" href="<?php the_permalink() ?>">Quiero ver más ></a></p>
+                <p class="latest-work__excerpt"><?php the_excerpt() ?><a class="view-more wow fadeInUp" href="<?php bloginfo('url') ?>/mis-trabajos/">Quiero ver más ></a></p>
             </div>
         <?php }
         wp_reset_postdata();
